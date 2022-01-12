@@ -17,7 +17,7 @@ public class MainClass04 {
 		// int type  과 int type 을 연산하면 결과는 int type 만 나온다.
 		// 만일 정확한 실수 값을 얻어내고 싶으면 연산에 참여하는 데이터 중에 
 		// 어느 하나가 실수 type 이 되어야 실수 type 이 결과로 나온다. 
-		double ave=(double)sum/3;
+		double ave=(double)sum/3; //더블 안쓰면 10/3 했을때 3.333이 아니라 3만 나오게됨 
 		// 4. ave 안에 들어 있는 값을 콘솔창에 출력 해 보세요.
 		System.out.println(ave);
 	}
