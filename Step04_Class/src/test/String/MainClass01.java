@@ -17,8 +17,8 @@ public static void main(String[] args) {
 		boolean result4= name1.equals(name2); //t why? equals는 문자열이 같냐는 거니까 
 		boolean result5= name1.contentEquals(name3); //t heap영역의 아이디값이 같냐는 질문이 아님
 		boolean result6= name3.equals(name4); //t
-		boolean result7= "rara".equals(name1);
-		boolean result8= name3.equals("rara");
+		boolean result7= "rara".equals(name1); //t
+		boolean result8= name3.equals("rara"); //t
 		System.out.println(result1);
 		System.out.println(result2);
 		System.out.println(result3);
