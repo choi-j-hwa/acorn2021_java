@@ -8,6 +8,7 @@ public class MainClass07 {
 		File myFile=new File("c:/");
 		//c:/ 하위의 폴더명 혹은 파일명을 문자열 배열로 얻어내기
 		String[] names=myFile.list();
+		File[] files=myFile.listFiles();
 		//출력해보기
 		for(int i=0; i<names.length; i++) {
 			String tmp=names[i];

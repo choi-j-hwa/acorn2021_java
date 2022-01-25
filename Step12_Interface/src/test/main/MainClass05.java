@@ -6,10 +6,8 @@ public class MainClass05 {
 	public static void main(String[] args) {
 		useDrill(new Drill() {
 			@Override
-			public void hole() {
-				System.out.println("바닥에 구멍을 3개 뚤어요");
-			}
-		});
+			public void hole() {}
+		}); // 같은것 useDrill(()->{}); 메소드가 1개일때만 가능
 		
 		useDrill(()->{
 			System.out.println("천장에 구멍을 2개 뚤어요");
@@ -20,6 +18,9 @@ public class MainClass05 {
 		};
 		useDrill(d1);
 	}
+	
+		
+	
 	
 	public static void useDrill(Drill d) {
 		d.hole();

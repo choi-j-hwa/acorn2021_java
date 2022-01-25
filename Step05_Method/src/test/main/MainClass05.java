@@ -10,6 +10,14 @@ public class MainClass05 {
 		MyObject.callPhone(new Phone());
 		//2. MyObject  클래스의 buyHouse() 메소드를 호출하고 
 		// 리턴되는 참조값을 myHome 이라는 이름의 지역 변수에 담아 보세요.
-		House myHome=MyObject.buyHouse();
+		MyObject m=new MyObject();
+		House myHome=m.buyHouse(); //static이라서 바로씀 ()안에 뭐가없어도됨
+		House a=MyObject.buyHouse();
+		MyObject.callPhone(new Phone());//폰을 받아와야하는 클래스라서. 
+		
+		MyObject.buyHouse().relax("rara");
+		
+				
+		
 	}
 }

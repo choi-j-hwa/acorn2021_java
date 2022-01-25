@@ -17,7 +17,7 @@ public class MainClass02 {
 		car1.name="프라이드";
 		//car1 안에 들어있는 참조값을 이용해서 cc 라는 필드에 int type value 넣어주기
 		car1.cc=1000;
-		
+		//
 		Car car2=new Car();
 		car2.drive();
 		car2.name="소나타";

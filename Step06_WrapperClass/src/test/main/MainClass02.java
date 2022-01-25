@@ -11,7 +11,7 @@ public class MainClass02 {
 		
 		// 10.2 => "10.2" 
 		String result4=num2.toString();
-		// "99.9" => 99.9
+		// "99.9" => 99.9  .parseint 로 하면 소숫점 뒤는 잘림 
 		double result5=Double.parseDouble("99.9");
 	}
 }

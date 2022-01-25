@@ -6,7 +6,7 @@ package test.main;
  *  
  *  - true, false 두가지 값중 하나이다.
  *  - true, false  를 직접 쓰거나 비교 연산 혹은 논리 연산의 결과로 얻어 낼수 있다.
- *  - 참고 거짓을 나타내는 데이터 type  
+ *  - 참과 거짓을 나타내는 데이터 type  
  */
 public class MainClass05 {
 	public static void main(String[] args) {

@@ -12,6 +12,7 @@ public class MainClass03 {
 		InputStream kbd=System.in;
 		InputStreamReader isr=new InputStreamReader(kbd);
 		BufferedReader br=new BufferedReader(isr);
+		
 		try {
 			System.out.print("문자열입력(아무거나 여러글자 가능):");
 			String line=br.readLine();

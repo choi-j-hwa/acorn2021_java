@@ -18,6 +18,11 @@ public class MainClass02 {
 		Phone p2=new HandPhone();
 		//HandPhone 객체를 생성해서 참조값을 Object type 변수에 담기 
 		Object p3=new HandPhone();
+		
+		HandPhone p4=(HandPhone)p3;
+		//p4. 하면 오브젝트 다 가능가능 
+		// 이렇게 하는 이유는 소고기김밥-김가네김밥-김밥-먹을거 처럼
+		// 확장을 위해서 오브젝트안에 오브젝트를 넣고 참조,제한을 하는것
 	}
 }
 

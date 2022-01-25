@@ -13,6 +13,11 @@ public class MainClass02 {
 		
 		try {
 			System.out.print("1글자 입력(한글가능):");
+			char[] buffer=new char[10];
+			int readedcount=isr.read(buffer);
+			for(int i=0;i<readedcount;i++) {
+				System.out.println("입력해보세요:");
+			}
 			int code=isr.read();
 			System.out.println("code:"+code);
 			char ch=(char)code;

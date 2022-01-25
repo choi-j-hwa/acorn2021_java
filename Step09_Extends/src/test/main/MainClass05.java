@@ -19,6 +19,7 @@ public class MainClass05 {
 		Phone p1=new Phone();
 		//runtime 시에 ClassCastException 이 발생한다.
 		//위의 설명에서 2 번과 같은 경우이다.
+		// 맞는경우는 Phone p1= SmartPhone p2  왼쪽이 더 큰 개념 
 		SmartPhone p2=(SmartPhone)p1;
 		p2.doInternet();
 	}

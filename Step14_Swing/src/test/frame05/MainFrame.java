@@ -59,7 +59,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		try {
+		try {//트라이에서 에러가 뜨면 실행을 안하고 캐치로 가서 메세지가 뜸. 
 			//입력한 숫자문자열을 실제 산술연산 가능한 숫자로 바꾸기
 			double num1=Double.parseDouble(inputNum1.getText());
 			double num2=Double.parseDouble(inputNum2.getText());

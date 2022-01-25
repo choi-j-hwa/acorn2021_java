@@ -11,8 +11,9 @@ public class MainClass02 {
 		String addr="노량진";
 		boolean isMan=true;
 		
-		//동일한 회원 정보를 HashMap  객체를 생성해서 담을수도 있다. 
+		//동일한 회원 정보를 HashMap  객체를 생성해서 담을수도 있다. <key type,value type>
 		Map<String, Object> map1=new HashMap<String, Object>();
+		
 		map1.put("num", 1);
 		map1.put("name", "김구라");
 		map1.put("addr", "노량진");
@@ -26,6 +27,8 @@ public class MainClass02 {
 		String c=(String)map1.get("addr");
 		//"isMan" 이라는 키값으로 저장된 boolean 불러오기
 		boolean d=(boolean)map1.get("isMan");
+		//어떤 키값인지 각자타입에 맞춰 casting(형변경) 해줘야함 
+		//put할때 string으로 들어갔으니 int,string,boolean으로 변경해줘야함
 		
 		//저장된 아이템의 갯수 (4)
 		int size=map1.size();

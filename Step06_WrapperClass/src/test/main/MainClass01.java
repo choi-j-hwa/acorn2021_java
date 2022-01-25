@@ -17,7 +17,7 @@ public class MainClass01 {
 	public static void main(String[] args) {
 		//기본 데이터 type
 		int num1=10;
-		//참조 데이터 type
+		//참조 데이터 type num2. 하면 메소드를 가지고있음
 		Integer num2=10;
 		
 		//참조 데이터 type  이지만 기본 데이터 type 과 동일 하게 사용할수 있다.
@@ -37,6 +37,7 @@ public class MainClass01 {
 		 *  "999" => 999 정수로 바꾸기 
 		 */
 		int result5=Integer.parseInt("999");
+		
 	}
 }
 

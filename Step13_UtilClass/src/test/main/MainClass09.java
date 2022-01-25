@@ -6,7 +6,7 @@ import java.util.Set;
 /*
  *  HashSet 클래스는 Set 인터페이스를 구현한 클래스 이다.
  *  - 저장된 데이터를 순서없이 무작위로 관리한다.
- *  - key 값도 없다.
+ *  - key 값도 없다. 감자봉지 같은것! 
  *  - 중복을 허용하지 않는다 ( 같은값이 두개 이상 존재할수 없다 )
  *  - 어떤 data 를 묶음(집합) 으로 관리 하고자 할때 사용한다. 
  *  - 중복된 데이터를 제거 할때도 유용하다
@@ -30,10 +30,10 @@ public class MainClass09 {
 		//저장된 아이템의 갯수
 		int size=set1.size(); //3
 		
-		//정수가 일렬로 담겨진 Intertor 객체의 참조값 얻어내기 
+		//정수가 일렬로 담겨진 Iterator(반복자) 객체의 참조값 얻어내기 
 		Iterator<Integer> it=set1.iterator();
 		//커서 다음에 데이터가 있으면 
-		while(it.hasNext()) {
+		while(it.hasNext()) { //괄호안이 true일때 계속 반복하다 false가 되는순간 반복 끝 
 			//커서를 다음 데이터로 옴겨서 해당 데이터를 읽어낸다.
 			Integer tmp=it.next();
 			//읽어낸 데이터 콘솔에 출력하기 

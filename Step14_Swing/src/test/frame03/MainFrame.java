@@ -13,7 +13,9 @@ import javax.swing.JTextField;
 
 public class MainFrame extends JFrame implements ActionListener{
 	//필드
-	JTextField inputText;
+	JTextField inputText; //자바스크립트에서 global영역에서 다 쓰이려면 밖으로 꺼내는거랑 같은거
+		// 필드로 만들어야지  생성자서 지역변수로 하면 JTextField.inputText=new JTextField(10);
+		// 하면 젤 아래쪽에 액션퍼폼에서 에러남 
 	
 	//생성자
 	public MainFrame(String title) {
@@ -34,7 +36,7 @@ public class MainFrame extends JFrame implements ActionListener{
 		topPanel.setBackground(Color.YELLOW);
 		
 		//페널 째로 프레임의 북쪽에 배치하기
-		add(topPanel, BorderLayout.NORTH);
+		add(topPanel, BorderLayout.NORTH); //보더레이아웃빼고 "north"만 쳐도됨 -소문자로
 		
 		//버튼에 리스너 등록하기
 		sendBtn.addActionListener(this);

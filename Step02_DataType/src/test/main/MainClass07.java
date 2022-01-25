@@ -6,6 +6,7 @@ package test.main;
  *  
  *  - 문자열을 다룰때 사용하는 데이터 type  이다.
  *  - 참조 데이터 type 변수에는 참조값(id) 값이 들어 있다.
+ *  - 기본 8가지 데이터에는 벨류가 들어있음  그게 차이 
  */
 public class MainClass07 {
 	public static void main(String[] args) {
@@ -18,7 +19,9 @@ public class MainClass07 {
 		name="원숭이";
 		// String type 참조값이 들어 갈수 있는 지역변수 name 을 빈상태로 만들기 
 		// null 은 참조 데이터 type 이 들어 갈수 있는 빈 공간을 의미한다. 
+		// 비어있기떄문에 id값이 아직은 없다   기본데이터는 null 불가! 생성이안됨
 		name=null;
+		
 	}
 }
 

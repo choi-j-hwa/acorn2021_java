@@ -7,6 +7,8 @@ public class MainClass06 {
 		Calculator add=(double a, double b)->{ 
 			return a+b; 
 		};
+		
+		add.exec(10, 20);
 		//위를 간략히 표현하면 아래와 같이 표현된다. 
 		Calculator add2=(a, b)->a+b;
 		Calculator sub=(a, b)->a-b;

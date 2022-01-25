@@ -18,6 +18,7 @@ public class MainClass03 {
 		names.add("해골");
 		names.add("원숭이");
 		
+		
 		//각각의 방에 저장된 값 불러오기 
 		String n1=names.get(0);
 		String n2=names.get(1);

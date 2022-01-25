@@ -18,10 +18,29 @@ public class MainClass05 {
 		 *  3  .
 		 *  4  .
 		 */
+		
+		List<String> mem = new ArrayList<>();
+		Scanner scan =new Scanner(System.in);
+		for(int i=0; i<5;i++) {
+			//입력을 위해 콘솔창을 열어주는것. syso
+			System.out.println("친구 이름을 입력하세요 :");
+			//scanner 객체 이용해서 문자열을 입력받음
+			String line=scan.nextLine();
+			// arrayList 객체에 저장하기
+			mem.add(line);
+		
+		} //1,2번 완성 
+		
+		for(int i=0; i<5; i++) {
+			String tmp=mem.get(i);
+			System.out.println(i+"번 째 친구이름: "+tmp);
+		}
+		
+				
 		//여러개의 문자열의 참조값을 저장하기 위해 생성한 객체
 		List<String> names=new ArrayList<String>();
 		//키보드로 부터 문자열을 입력 받기 위해 생성한 객체 (금수저)
-		Scanner scan=new Scanner(System.in);
+		Scanner scan2=new Scanner(System.in);
 		//5 번 반복을 수행할 for 문 구성
 		for(int i=0; i<5 ; i++) {
 			System.out.println("친구 이름 입력:");
@@ -29,17 +48,18 @@ public class MainClass05 {
 			names.add(line);
 		}
 		//반복문 돌면서 names  에 저장된 내용을 정해진 형식으로 콘솔창에 출력하기
-		for(int i=0; i<5; i++) {
+		for(int i=0; i<names.size(); i++) {
 			//i 번째 저장된 아이템을 읽어와서 
 			String tmp=names.get(i);
 			System.out.println(i+" 번째 친구 이름 : "+tmp);
 		}
 		System.out.println("----------------");
 		for(String tmp:names) {
-			System.out.println("친구 이름 : "+tmp);
-		}
+			System.out.println("친구 이름 : "+tmp);  
 	}
-}
+	}}
+
+
 
 
 

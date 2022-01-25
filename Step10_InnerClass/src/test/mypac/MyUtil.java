@@ -13,6 +13,7 @@ public class MyUtil {
 	 */
 	public class User{
 		public void doSomething() {
+			
 			//바깥에 자신을 포함하고 있는 객체의 참조값을 가리키는 방법은 
 			//바깥클래스명.this 이다. 
 			System.out.println(MyUtil.this.owner);

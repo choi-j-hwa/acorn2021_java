@@ -12,6 +12,7 @@ public class MainClass01 {
 		FruitBox<Banana> box2=new FruitBox<Banana>();
 		FruitBox<Orange> box3=new FruitBox<Orange>();
 		
+		
 		//setItem( ) 메소드에 전달해야하는 type 이 Generic class 에 의해서 정해진다.
 		box1.setItem(new Apple());
 		box2.setItem(new Banana());

@@ -19,9 +19,13 @@ public class MainClass03 {
 			public void attack() {
 				System.out.println("칼로 공격을 해요!");
 			}
+			public void move() {
+				System.out.println("무브무브");
+			}
 		}
 		//Sword 객체를 생성해서 참조값을 Weapon type 으로 받기
-		Weapon w1=new Sword();
+		Sword w1=new Sword();
+		w1.move();
 		useWeapon(w1);
 		//AirPlane 객체를 생성해서 참조값을 Weapon type 으로 받기
 		Weapon w2=new AirPlane();

@@ -25,12 +25,12 @@ public class MainClass06 {
 		int code4=ch4;
 		int code5=ch5;
 		
-		char result1=96;
-		char result2=97;
-		char result3=98;
+		char result1=96; //'
+		char result2=97; //a
+		char result3=98; // b
 		
 	}
-}
+} 
 
 
 

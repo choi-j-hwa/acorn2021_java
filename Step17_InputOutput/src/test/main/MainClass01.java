@@ -2,15 +2,18 @@ package test.main;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class MainClass01 {
 	public static void main(String[] args) {
 		System.out.println("메인 메소드가 시작 되었습니다.");
 		//키보드로 부터 입력 받을수 있는 객체의 참조값을 kbd 라는 이름의 지역 변수에 담기
 		InputStream kbd=System.in;
+		InputStreamReader isr=new InputStreamReader(kbd);
+		//2byte 처리 스트림이라 한글도 입력하능 
 		try {
-			System.out.print("문자1개 입력:");
-			int code=kbd.read();
+			System.out.print("문자1개 입력(한글가능):");
+			int code=isr.read();
 			//입력받은 코드값 출력하기 
 			System.out.println("code:"+code);
 			//코드에 대응되는 문자1개 얻어내는 방법

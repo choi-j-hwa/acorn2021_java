@@ -59,6 +59,15 @@ public class MainClass08 {
 			//출력하기
 			System.out.println("번호 : "+num+", 이름 : "+name+", 주소 : "+addr);
 		}
+		int num=1;
+		Object o1=num;
+		int result=(int)o1;
+		System.out.println(result);
+		
+		String name="Rara";
+		Object o2=name;
+		String result1=(String)o2;
+		System.out.println(result1);
 		
 	}
 }

@@ -23,16 +23,25 @@ public class MainClass07 {
 		//1.
 		List<Car> cars=new ArrayList<Car>();
 		//2.
-		Car c1=new Car("소나타");
-		Car c2=new Car("아반떼");
-		Car c3=new Car("티볼리");
+		Car c1=new Car("bmw");
+		Car c2=new Car("benz");
+		Car c3=new Car("audi");
 		cars.add(c1);
 		cars.add(c2);
 		cars.add(c3);
+		// cars.add(new Car("bmw");
+		// cars.add(new Car("benz");
 		//3. 
 		for(Car tmp:cars) {
 			tmp.drive();
+			// for(int i=o;i<cars.size(); i++){
+			// car tmp=cars.get(i);
+			// tmp.drive();}
 		}
+		System.out.println("-----------------");
+		for (Car tmp : cars) {
+			tmp.drive();
+		} // 위랑 같음 내부에서 같은값을 적용할 떄 i값을 안쓰고! 
 	}
 }
 

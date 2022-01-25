@@ -1,5 +1,6 @@
 package test.main;
 
+import test.mypac.Nuclear;
 import test.mypac.Tank;
 import test.mypac.Weapon;
 
@@ -13,6 +14,8 @@ public class MainClass02 {
 		 */
 		Weapon t=new Tank();
 		useWeapon(t);
+		Weapon n=new Nuclear(); //= Nuclear n=new Nuclear();
+		useWeapon(n);
 	}
 	// Weapon type 의 참조값을 인자로 전달 받는 메소드 
 	public static void useWeapon(Weapon w) {

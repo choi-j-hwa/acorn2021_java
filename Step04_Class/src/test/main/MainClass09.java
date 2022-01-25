@@ -16,7 +16,31 @@ public class MainClass09 {
 		 *  2. oli999@naver.com 으로 이메일을 보낸다.
 		 */
 		
-		Computer com1=new Computer(new Cpu(), new Memory(), new HardDisk());
+		Computer c1=new Computer(new Cpu(), new Memory(),new HardDisk());
+		c1.playGame();
+		c1.sendEmail("oli");
+		
+		Cpu c=new Cpu();
+		Memory m=new Memory();
+		HardDisk h=new HardDisk();
+		
+		Computer c2=new Computer(c, m, h);
+		c2.playGame();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	/*	Computer com1=new Computer(new Cpu(), new Memory(), new HardDisk());
 		com1.playGame();
 		com1.sendEmail("oli999@naver.com");
 		
@@ -26,7 +50,7 @@ public class MainClass09 {
 		
 		Computer com2=new Computer(cpu, memory, hardDisk);
 		com2.playGame();
-		com2.sendEmail("kbs-tv@daum.net");
+		com2.sendEmail("kbs-tv@daum.net"); */
 	}
 }
 
